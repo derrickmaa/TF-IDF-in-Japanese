@@ -51,7 +51,7 @@ def tfidf(lists, corpus):
     result = sorted(turns.items(), key=lambda item: item[1], reverse=True)
     for i in range(len(result)):
         usedwords.append(result[i][0])
-    return usedwords[:5]  # 出力単語数
+    return usedwords[:5]
 
 
 def main():
