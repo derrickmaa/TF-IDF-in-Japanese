@@ -44,6 +44,7 @@ def tfidf(lists, corpus):
     usedwords = []
     documentlength = len(lists)
     wordslist = list(set(lists))
+    wordslist.sort(key=lists.index)
     turns = collections.Counter(lists)
     turns = dict(turns)
     for i in wordslist:
